@@ -17,6 +17,7 @@ var paymentRouter = require('./routes/payment');
 var app = express();
 const hbs = require('hbs');
 
+
 //this required before view engine setup
 hbs.registerPartials(__dirname + '/views/partials');
 
