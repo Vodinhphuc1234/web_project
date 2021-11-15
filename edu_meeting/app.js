@@ -12,7 +12,6 @@ var registerRouter = require('./routes/register');
 var courseRouter = require('./routes/courses');
 var coursedetailsRouter = require('./routes/course_details');
 var meetingdetailsRouter = require('./routes/meeting_details');
-var paymentRouter = require('./routes/payment');
 
 var app = express();
 const hbs = require('hbs');
@@ -39,7 +38,6 @@ app.use('/register', registerRouter);
 app.use('/courses', courseRouter);
 app.use('/course_details', coursedetailsRouter);
 app.use('/meeting_details', meetingdetailsRouter);
-app.use('/payment', paymentRouter);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
